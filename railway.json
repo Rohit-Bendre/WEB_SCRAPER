@@ -1,5 +1,5 @@
 {
-    "build": "cd scraper && apt-get update && apt-get install -y openjdk-17-jdk && java -version && ./mvnw clean package -DskipTests",
-    "start": "cd scraper && java -jar target/*.jar"
+    "buildCommand": "cd scraper && apt-get update && apt-get install -y openjdk-17-jdk && java -version && ./mvnw clean package -DskipTests",
+    "startCommand": "cd scraper && java -jar target/*.jar"
   }
   
