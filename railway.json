@@ -1,0 +1,6 @@
+{
+    "deploy": {
+      "startCommand": "cd scraper && java -jar target/*.jar",
+      "buildCommand": "cd scraper && ./mvnw clean package -DskipTests"
+    }
+  }
