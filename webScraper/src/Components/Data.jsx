@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../App.css';
-const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL;
+
 
 
 export default function Data() {
