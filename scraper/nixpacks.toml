@@ -1,0 +1,9 @@
+[phases.setup]
+nixpkgs = ["openjdk17", "maven"]
+
+[phases.build]
+env = { JAVA_HOME = "/nix/var/nix/profiles/default" }
+cmds = ["chmod +x ./mvnw", "./mvnw clean package -DskipTests"]
+
+[start]
+cmd = "java -jar target/*.jar"

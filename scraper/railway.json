@@ -1,0 +1,5 @@
+{
+  "start": {
+    "command": "java -jar target/*.jar"
+  }
+}

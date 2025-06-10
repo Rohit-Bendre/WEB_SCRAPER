@@ -1,7 +1,0 @@
-{
-    "build": {
-      "command": "cd scraper && apt-get update && apt-get install -y openjdk-17-jdk && export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 && export PATH=$JAVA_HOME/bin:$PATH && ./mvnw clean package -DskipTests"
-    },
-    "start": "cd scraper && java -jar target/*.jar"
-  }
-  

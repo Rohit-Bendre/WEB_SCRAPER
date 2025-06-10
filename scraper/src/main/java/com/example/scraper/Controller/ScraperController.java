@@ -20,7 +20,7 @@ import org.springframework.http.*;
 import java.io.ByteArrayOutputStream;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class ScraperController {
     private List<Map<String, Object>> lastScrapeResults = new ArrayList<>();
 
